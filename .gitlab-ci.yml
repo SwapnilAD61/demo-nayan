@@ -1,0 +1,27 @@
+stages:
+    - build
+    - test
+    - deploy
+
+test tac:
+    stage: test
+    tags:
+        - ruby_1
+    script:
+        - rspec
+variables:
+    RUBY_VERSION: '2.7'
+    
+build tac:
+    stage: build
+    tags:
+        - ruby_1
+    script:
+        - bundle install 
+
+deploy tac:
+    stage: deploy
+    tags:
+        - ruby_1
+    script:
+        - echo "Deploying Tic-Tac-Toe game"
