@@ -6,7 +6,7 @@ stages:
 test tac:
     stage: test
     tags:
-        - ruby-1
+         - ruby-1
     script:
         - rspec
 variables:
