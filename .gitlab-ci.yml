@@ -6,24 +6,24 @@ stages:
 test tac:
     stage: test
     tags:
-         - ruby-1
+         - tic
     script:
-        - rspec spec/cell_spec
+        - rspec
 variables:
     RUBY_VERSION: '2.7'
     
 build tac:
     stage: build
     tags:
-        - ruby-1
+        - tic
     script:
-        - bundle gem tic_tac_toe
+        - bundle install 
 
 deploy tac:
     stage: deploy
     tags:
-        - ruby-1
+        - tic
     script:
-        - "Deploying Tic Tac Toe"
+        - echo "Deploying Tic-Tac-Toe game"
 
 
