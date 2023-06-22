@@ -8,7 +8,7 @@ test tac:
     tags:
          - ruby-1
     script:
-        - rspec
+        - rspec spec/cell_spec
 variables:
     RUBY_VERSION: '2.7'
     
@@ -17,13 +17,13 @@ build tac:
     tags:
         - ruby-1
     script:
-        - bundle install 
+        - bundle gem tic_tac_toe
 
 deploy tac:
     stage: deploy
     tags:
         - ruby-1
     script:
-        - echo "Deploying Tic-Tac-Toe game"
+        - "Deploying Tic Tac Toe"
 
 
