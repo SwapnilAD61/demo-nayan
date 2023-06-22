@@ -6,7 +6,7 @@ stages:
 test tac:
     stage: test
     tags:
-        - ruby_1
+        - ruby-1
     script:
         - rspec
 variables:
@@ -15,13 +15,13 @@ variables:
 build tac:
     stage: build
     tags:
-        - ruby_1
+        - ruby-1
     script:
         - bundle install 
 
 deploy tac:
     stage: deploy
     tags:
-        - ruby_1
+        - ruby-1
     script:
         - echo "Deploying Tic-Tac-Toe game"
