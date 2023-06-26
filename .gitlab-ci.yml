@@ -25,6 +25,6 @@ deploy tac:
         - ruby_1
     script:
         - ruby example/example_game.rb
-        - echo "Deploying Tic-Tac-Toe game"
+        # - echo "Deploying Tic-Tac-Toe game"
 
 
