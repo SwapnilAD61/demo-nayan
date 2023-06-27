@@ -8,7 +8,7 @@ test tac:
     tags:
          - ruby_1
     script:
-        - rspec spec/cell_spec.rb
+          - rspec spec/cell_spec.rb
         # -  ruby example/example_game.rb
 variables:
     RUBY_VERSION: '2.7'
