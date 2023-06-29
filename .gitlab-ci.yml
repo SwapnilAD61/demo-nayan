@@ -28,5 +28,14 @@ deploy tac:
         # - ruby example/example_game.rb
         - echo "Deploying Tic-Tac-Toe game"
 
+build app:
+  image: golang:latest
+  stage: build
+  script:
+    - go build -o app main.go
+  artifacts:
+    paths:
+      - app
+    expire_in: 1 hour
 
 
